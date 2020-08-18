@@ -1,0 +1,10 @@
+1 - CREATE DATABASE databasename;
+
+2 - CREATE TABLE [dbo].[Users] (
+    [Id] INT            IDENTITY (1, 1) NOT NULL,
+    [Name]  NVARCHAR (100) NOT NULL,
+    [Nick]   NVARCHAR (100) NOT NULL,
+    CONSTRAINT [PK_dbo.Customers] PRIMARY KEY CLUSTERED ([Id] ASC)
+    );
+
+3 - Get connectionString and put in UserRepository
